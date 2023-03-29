@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\PostController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +16,3 @@ use App\Http\Controllers\Admin\PostController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-// Route::post('posts', [PostController::class,'create']);
-
-Route::resource('posts', 'PostsController');
